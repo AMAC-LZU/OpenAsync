@@ -6,7 +6,8 @@ OpenAsync is a project that aims to build an open-source asynchronous architectu
 We have two main contents about OpenAsync:
 1: Core Architecture: This is the core architecture of OpenAsync, which includes the basic architecture and the core architecture of the asynchronous architecture.
 2: Edge works: base on the core architecture, we have some edge works, such as Cpu, Noc, EDA tools, etc.
-Content     | main
+
+Content | main
 -------- | ----------
 Base arch in cal  | float/fixed point calculateion
 Storage arch | Register, Cache, Memory, Storage
