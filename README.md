@@ -3,8 +3,8 @@ OpenAsync is a project that aims to build an open-source asynchronous architectu
 # README.md
 - en [English](README.md)
 - zh_CN [简体中文](readme/README.zh_CN.md)
-We have two main contents about OpenAsync:
-1: Core Architecture: This is the core architecture of OpenAsync, which includes the basic architecture and the core architecture of the asynchronous architecture.
+We have two main contents about OpenAsync:<br/>
+1: Core Architecture: This is the core architecture of OpenAsync, which includes the basic architecture and the core architecture of the asynchronous architecture.<br/>
 2: Edge works: base on the core architecture, we have some edge works, such as Cpu, Noc, EDA tools, etc.
 
 Content | main
