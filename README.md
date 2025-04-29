@@ -17,3 +17,7 @@ General arch| ISA, CPU Core, MMU
 Domain-specific arch| Artificial Intelligence, Reconfigurable Computing, Security, Tensor, etc. 
 ---
 ![default_00](https://github.com/user-attachments/assets/d53d5ab1-6fe2-4e7d-8409-e571a2ddfc22)
+Rank | Name | Sum_Line| Sum_File| 
+ ----| ----| ---- | ----|
+1| yangjinyu | 11 | 1|
+---
