@@ -17,7 +17,7 @@ for path,dir_lst,file_lst in fileList:
         if file.endswith('.txt') or file.endswith('.java') or file.endswith('.c') or file.endswith('.cpp') or file.endswith('.h') or file.endswith('.js') or file.endswith('.html') or file.endswith('.css') or file.endswith('.php') or file.endswith('.sql') or file.endswith('.xml') or file.endswith('.json') or file.endswith('.yaml') or file.endswith('.yml') or file.endswith('.md'):
         # 输出文件文本信息
 # 获取文件行数
-            print(path+'/'+file)
+            # print(path+'/'+file)
             f=open(path+'/'+file, 'r', encoding='utf-8',newline="\n") 
             # print(f.read())
             opgg=f.read()
