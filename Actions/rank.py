@@ -3,14 +3,14 @@ from pathlib import Path
 import os
 import re
 fileList=os.walk("./")
-print("当前目录下的文件：")
+# print("当前目录下的文件：")
 nameList=[]
 work_Line_dic={}
 work_File_dic={}
 # rep=r'reviewer:\[(.*)\]'
 pattern = r'reviewer:\[(.*)\]'
-print(re.search(pattern, 'reviewer:[yangjinyu]'))
-print("gogogo")
+# print(re.search(pattern, 'reviewer:[yangjinyu]'))
+# print("gogogo")
 for path,dir_lst,file_lst in fileList:
     # print(file_lst)
     for file in file_lst:
@@ -21,10 +21,10 @@ for path,dir_lst,file_lst in fileList:
             f=open(path+'/'+file, 'r', encoding='utf-8',newline="\n") 
             # print(f.read())
             opgg=f.read()
-            print(opgg)
+            # print(opgg)
             line_count = opgg.count('\n')+1 
             count=re.search(pattern, opgg)
-            print(count)
+            # print(count)
             if count!=None:
                 nameList.append(count.group(1))
                 work_Line_dic[nameList[-1]]=line_count
@@ -34,12 +34,12 @@ for path,dir_lst,file_lst in fileList:
                     work_File_dic[nameList[-1]]+=1
             # 生成Excel表
             f.close()
-print("文件行数统计：")
-for name in work_Line_dic:
-    print(f"{name}: {work_Line_dic[name]}行")
-print("文件数量统计：")
-for name in work_File_dic:
-    print(f"{name}: {work_File_dic[name]}个文件")
+# print("文件行数统计：")
+# for name in work_Line_dic:
+#     print(f"{name}: {work_Line_dic[name]}行")
+# print("文件数量统计：")
+# for name in work_File_dic:
+#     print(f"{name}: {work_File_dic[name]}个文件")
 f=open("./README.md", 'r', encoding='utf-8',newline="\n")
 opgg=f.read()
 f.close()
@@ -70,6 +70,6 @@ repl+=r'---'
 # print(dotall,repl,opgg)
 new_file = re.sub(dotall, repl, opgg)
 f.write(new_file)
-print("文件内容替换完成")
+# print("文件内容替换完成")
 f.close()
 # 
